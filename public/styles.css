@@ -42,3 +42,15 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+
+.hi {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  padding: 30px;
+
+}
