@@ -55,7 +55,12 @@ body {
   overflow: hidden;
   border-radius: 50%;
   padding: 30px;
+  
 
+}
+
+.hi:hover{
+  opacity: 0.2;
 }
 
 
