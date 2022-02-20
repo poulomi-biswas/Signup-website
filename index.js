@@ -39,7 +39,7 @@ app.post("/", function(req, res){
 
    const options={
        method: "POST",
-       auth:"yo1:8a589a85597871999ad9be950e76c7d4-us14"
+       auth: process.env.RURU_SENPAI
    }
 
    const request= https.request(url,options,function(response){
