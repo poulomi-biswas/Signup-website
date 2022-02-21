@@ -7,17 +7,17 @@ const path = require("path");
 require('dotenv').config();
 
 
-const app= express();
+const index= express();
 
-app.use(express.static(path.join(__dirname, "public")));
-app.use(bodyParser.urlencoded({extended: true}));
+index.use(express.static(path.join(__dirname, "public")));
+index.use(bodyParser.urlencoded({extended: true}));
 
 // app.get("/", function(req,res){
 //     res.sendFile(__dirname + "/signup.html");
 // });
 
 
-app.post("/", function(req, res){
+app.index("/", function(req, res){
     const firstName= req.body.fName;
     const lastName= req.body.Lname;
     const email= req.body.email;
@@ -65,11 +65,11 @@ app.post("/", function(req, res){
 
 });
 
-app.post("/failure", function(req, res){
+index.post("/failure", function(req, res){
     res.redirect("/");
 });
 
-app.listen(process.env.PORT || 3000, function(){
+index.listen(process.env.PORT || 3000, function(){
     console.log("server is running on port 3000");
 });
 
